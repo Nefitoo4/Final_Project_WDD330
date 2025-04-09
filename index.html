@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" type="module"></script>
     <title>El Imposible Natural Reserve</title>
   </head>
-  <body></body>
+  <body>
+    <template id="img-template">
+      <picture>
+        <source srcset="image-large.jpg" media="(min-width:1024px)" />
+        <source srcset="image-medium.jpg" media="(min-width:768px)" />
+        <img src="image-small.jpg" alt="el imposible species" />
+      </picture>
+    </template>
+  </body>
 </html>
