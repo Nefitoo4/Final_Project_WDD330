@@ -1,0 +1,20 @@
+:root {
+  /* Colores principales */
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --success-color: #198754;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #0dcaf0;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+
+  /* Estilos de texto */
+  --font-family: "Arial", sans-serif;
+  --font-size-base: 16px;
+  --font-size-large: 1.25rem;
+  --font-size-small: 0.875rem;
+  --line-height: 1.5;
+  --text-color: #212529; /* main text */
+  --muted-text-color: #6c757d; /* secondary text */
+}
