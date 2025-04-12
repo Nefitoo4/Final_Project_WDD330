@@ -25,3 +25,64 @@
   height: auto;
   margin: 0 auto;
 }
+
+/* Main container to flip effect */
+.card-flip {
+  perspective: 1000px;
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+}
+
+/* inner container to flip */
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+/* flip the card on hover */
+.card-flip:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* front and back of the card */
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* front of the card */
+.card-front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+}
+
+/* back of the card */
+.card-back {
+  color: var(--primary-color);
+  transform: rotateY(180deg);
+  text-align: center;
+}
+
+.card-back .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
