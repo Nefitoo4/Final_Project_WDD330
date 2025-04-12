@@ -18,3 +18,10 @@
   --text-color: #212529; /* main text */
   --muted-text-color: #6c757d; /* secondary text */
 }
+
+/* carousel img-size */
+.carousel-inner img {
+  max-width: 60%;
+  height: auto;
+  margin: 0 auto;
+}
