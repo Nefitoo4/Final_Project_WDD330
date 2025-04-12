@@ -1,22 +1,22 @@
-{
-  "species": [
-    {
-      "name": "puma",
-      "scientific_name": "Puma concolor",
-      "habitat": "mountains",
-      "diet": "carnivore",
-      "conservation_status": "Least Concern",
-      "description": "The puma, also known as the cougar or mountains lion, is a large felid native to the Americas. It is known for its adaptability to various habitats, including mountains, forests, and deserts.",
-      "image": "./images/puma.webp"
-    },
-    {
-      "name": "elephant",
-      "scientific_name": "Loxodonta africana",
-      "habitat": "savannah",
-      "diet": "herbivore",
-      "conservation_status": "Vulnerable",
-      "description": "The African elephant is the largest land animal on Earth, known for its intelligence, strong social bonds, and iconic tusks. It inhabits savannahs, forests, and deserts in Africa.",
-      "image": "./images/elephant.webp"
-    }
-  ]
-}
+[
+  {
+    "name": "Puma",
+    "scientific_name": "Puma concolor",
+    "habitat": "mountains",
+    "diet": "carnivore",
+    "conservation_status": "Least Concern",
+    "description": "The puma, also known as the cougar or mountains lion, is a large felid native to the Americas. It is known for its adaptability to various habitats, including mountains, forests, and deserts.",
+    "image": "./images/puma.jpg",
+    "alt": "Puma"
+  },
+  {
+    "name": "Black Hawk",
+    "scientific_name": "Loxodonta africana",
+    "habitat": "savannah",
+    "diet": "herbivore",
+    "conservation_status": "Vulnerable",
+    "description": "The African elephant is the largest land animal on Earth, known for its intelligence, strong social bonds, and iconic tusks. It inhabits savannahs, forests, and deserts in Africa.",
+    "image": "./images/black-hawk.jpg",
+    "alt": "Black Hawk"
+  }
+]
