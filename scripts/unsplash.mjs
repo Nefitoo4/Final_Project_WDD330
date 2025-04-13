@@ -1,0 +1,19 @@
+const unsplashUrl = "https://api.unsplash.com/search/photos";
+const unsplashKey = "WzQhq6RGbkGPoCvNGeDbVadYqM9tsppAEwe3hUwUjsM";
+
+export async function fetchUnsplashImages(query) {
+  try {
+    const response = await fetch(
+      `${unsplashUrl}?query=${query}&client_id=${unsplashKey}`
+    );
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    console.log(data);
+    return data.results;
+  } catch (error) {
+    console.error("Error fetching Unsplash images:", error);
+    return [];
+  }
+}
