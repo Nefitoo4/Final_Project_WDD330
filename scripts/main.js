@@ -32,3 +32,13 @@ fetchAnimalData();
 // }
 
 // loadAnimalsWithImages();
+document.getElementById("search-button").addEventListener("click", async () => {
+  const searchInput = document.getElementById("search-input").value.trim(); // Get the search input value
+  if (!searchInput) {
+    alert("Please enter a search term.");
+    return;
+  }
+
+  // Fetch animal data based on the search input
+  await fetchAnimalData(searchInput);
+});

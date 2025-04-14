@@ -1,10 +1,6 @@
-import { fetchRandomAnimalImage } from "./apiAnimalsImg.mjs";
+import { generateImage } from "./ImgGeneratorIA.mjs";
 
-function delay(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
-export async function fetchAnimalData() {
+export async function fetchAnimalData(searchTerm = "") {
   const cachedData = localStorage.getItem("animalData");
   if (cachedData) {
     console.log("Using cached data");
@@ -12,7 +8,7 @@ export async function fetchAnimalData() {
     return;
   }
 
-  const url = "https://animals7.p.rapidapi.com/api/animals?animal=Tiger";
+  const url = "https://animals7.p.rapidapi.com/api/animals";
   const options = {
     method: "GET",
     headers: {
@@ -28,15 +24,28 @@ export async function fetchAnimalData() {
     }
     const data = await response.json();
 
-    //Iterate over each animal and fetch images
-    for (const animal of data) {
-      animal.imageUrl = await fetchRandomAnimalImage(); //Assign the image URL to the animal object
+    // Filter the data results according the search input
+    const filteredData = data.filter((animal) =>
+      animal.Animal.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    // Asign the filtered data to the data variable
+    for (const animal of filteredData) {
+      animal.Animal = await fetchAnimalData();
+    }
+
+    // Generate images based on the animal name
+    for (const animal of filteredData) {
+      animal.imageUrl = await generateImage(animal.Animal); // Generate image URL
     }
 
     //Cache the data in local storage
     localStorage.setItem("animalData", JSON.stringify(data));
     console.log(data); //verify the data
     displayAnimals(data);
+
+    // Display the filtered animals
+    displayAnimals(filteredData);
   } catch (error) {
     console.error("Error fetching animal data:", error);
   }
@@ -45,6 +54,11 @@ export async function fetchAnimalData() {
 function displayAnimals(data) {
   const container = document.querySelector("#species-container");
   container.innerHTML = ""; // Clear previous content
+
+  if (data.lengh === 0) {
+    container.innerHTML = "<p class='text-center'>No results found.</p>";
+    return;
+  }
 
   data.forEach((animal) => {
     const card = document.createElement("div");
