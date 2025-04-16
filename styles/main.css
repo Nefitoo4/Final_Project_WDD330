@@ -94,3 +94,14 @@
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+#species-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Adjust the number of cards automatically */
+  gap: 1rem; /* Space between cards */
+  padding: 1rem; /* Pdding around the grid */
+  justify-items: center; /* Center the cards horizontally */
+}
