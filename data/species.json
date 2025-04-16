@@ -33,7 +33,7 @@
     "diet": "Carnivore",
     "family": "Accipitridae",
     "conservation_status": "Least Concern",
-    "image": "./images/bald_eagle.png"
+    "image": "./images/bald-eagle.jpg"
   },
   {
     "name": "Koala",
@@ -42,7 +42,7 @@
     "diet": "Herbivore",
     "family": "Phascolarctidae",
     "conservation_status": "Vulnerable",
-    "image": "./images/koala.png"
+    "image": "./images/koala.jpg"
   },
   {
     "name": "Polar Bear",
@@ -51,7 +51,7 @@
     "diet": "Carnivore",
     "family": "Ursidae",
     "conservation_status": "Vulnerable",
-    "image": "./images/polar_bear.png"
+    "image": "./images/polar-bear.jpg"
   },
   {
     "name": "Blue Whale",
@@ -60,7 +60,7 @@
     "diet": "Carnivore (krill)",
     "family": "Balaenopteridae",
     "conservation_status": "Endangered",
-    "image": "./images/blue_whale.png"
+    "image": "./images/blue-whale.jpg"
   },
   {
     "name": "Komodo Dragon",
@@ -69,7 +69,7 @@
     "diet": "Carnivore",
     "family": "Varanidae",
     "conservation_status": "Vulnerable",
-    "image": "./images/komodo_dragon.png"
+    "image": "./images/komodo-dragon.jpg"
   },
   {
     "name": "Emperor Penguin",
@@ -78,7 +78,7 @@
     "diet": "Carnivore (fish)",
     "family": "Spheniscidae",
     "conservation_status": "Near Threatened",
-    "image": "./images/emperor_penguin.png"
+    "image": "./images/emperor-penguin.jpg"
   },
   {
     "name": "Red Fox",
@@ -87,7 +87,7 @@
     "diet": "Omnivore",
     "family": "Canidae",
     "conservation_status": "Least Concern",
-    "image": "./images/red_fox.png"
+    "image": "./images/red-fox.jpg"
   },
   {
     "name": "Green Sea Turtle",
@@ -96,7 +96,7 @@
     "diet": "Herbivore",
     "family": "Cheloniidae",
     "conservation_status": "Endangered",
-    "image": "./images/green_sea_turtle.png"
+    "image": "./images/green-sea-turtle.jpg"
   },
   {
     "name": "Snow Leopard",
@@ -105,7 +105,7 @@
     "diet": "Carnivore",
     "family": "Felidae",
     "conservation_status": "Vulnerable",
-    "image": "./images/snow_leopard.png"
+    "image": "./images/snow-leopard.jpg"
   },
   {
     "name": "African Wild Dog",
@@ -114,7 +114,7 @@
     "diet": "Carnivore",
     "family": "Canidae",
     "conservation_status": "Endangered",
-    "image": "./images/african_wild_dog.png"
+    "image": "./images/african-wild-dog.jpg"
   },
   {
     "name": "Orangutan",
@@ -132,6 +132,6 @@
     "diet": "Carnivore",
     "family": "Lamnidae",
     "conservation_status": "Vulnerable",
-    "image": "./images/great_white_shark.png"
+    "image": "./images/great-white-shark.jpg"
   }
 ]
