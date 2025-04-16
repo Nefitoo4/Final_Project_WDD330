@@ -70,7 +70,8 @@ function displayAnimals(data) {
       "text-primary",
       "bg-transparent"
     );
-    card.style.width = "18rem";
+    card.style.width = "100%";
+    card.style.maxwidth = "300px";
 
     //Generate the card content
     card.innerHTML = `
