@@ -9,10 +9,10 @@ export async function loadSpecies() {
 
     // Generate HTML for each species and append to the container
     species.forEach((animal) => {
-      const cardFlip = document.createElement("div");
-      cardFlip.classList.add("card-flip");
+      const card = document.createElement("div");
+      card.classList.add("card");
 
-      cardFlip.classList.add(
+      card.classList.add(
         "card",
         "mb-4",
         "mx-auto",
@@ -21,27 +21,29 @@ export async function loadSpecies() {
         "bg-transparent"
       );
 
-      cardFlip.style.width = "18rem";
-      cardFlip.style.padding = "16px";
+      card.style.width = "18rem";
+      card.style.padding = "16px";
 
-      cardFlip.innerHTML = `
+      card.innerHTML = `
         <div class="card-inner">
           <div class="card-front">
-              <img src="${animal.image}" alt="${animal.alt}" class="card-img-top rounded mb-3 img-fluid" style="height: 200px;"/>
+              <img src="${animal.image}" alt="${animal.name} image" class="card-img-top rounded mb-3 img-fluid" style="height: 200px;"/>
               <h5 class="card-title text-center">${animal.name}</h5>
           </div>
           <div class="card-back">
             <div class="card-content">
-              <p class="text-center"><strong>Name:</strong>${animal.name}</p>
-              <p class="text-center"><strong>Scientific Name:</strong>${animal.scientific_name}</p>
-              <p class="text-center"><strong>Habitat:</strong>${animal.habitat}</p>
-              <p class="text-center"><strong>Description:</strong>${animal.description}</p>
+              <p class="text-center"><strong>Name: </strong>${animal.name}</p>
+              <p class="text-center"><strong>Countries Found: </strong>${animal.country}</p>
+              <p class="text-center"><strong>Habitat: </strong>${animal.habitat}</p>
+              <p class="text-center"><strong>Diet: </strong>${animal.diet}</p>
+              <p class="text-center"><strong>Family: </strong>${animal.family}</p>
+              <p class="text-center"><strong>Conservation Status: </strong>${animal.conservation_status}</p>
             </div>
           </div>
         </div>`;
 
       // Add the card to the container
-      speciesContainer.appendChild(cardFlip);
+      speciesContainer.appendChild(card);
     });
   } catch (error) {
     console.error("Error loading species:", error);

@@ -27,7 +27,7 @@
 }
 
 /* Main container to flip effect */
-.card-flip {
+.card {
   perspective: 1000px;
   width: 20rem;
   height: 20rem;
@@ -44,7 +44,7 @@
 }
 
 /* flip the card on hover */
-.card-flip:hover .card-inner {
+.card:hover .card-inner {
   transform: rotateY(180deg);
 }
 
@@ -104,4 +104,8 @@
   gap: 1rem; /* Space between cards */
   padding: 1rem; /* Pdding around the grid */
   justify-items: center; /* Center the cards horizontally */
+}
+
+.message {
+  margin-bottom: 2rem;
 }

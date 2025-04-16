@@ -69,7 +69,7 @@ function displayAnimals(data) {
 
   if (data.length === 0) {
     container.innerHTML =
-      "<p class='text-center'>Please enter a search term to find animals.</p>";
+      "<p class='text-center message'>Please enter a search term to find animals.</p>";
     return;
   }
 
@@ -84,32 +84,40 @@ function displayAnimals(data) {
       "bg-transparent"
     );
     card.style.width = "18rem";
-    card.style.maxwidth = "300px";
+    card.style.padding = "16px";
 
     //Generate the card content
     card.innerHTML = `
-            <img src="${animal.imageUrl}" alt="${
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="${animal.imageUrl}" alt="${
       animal.Animal || "Animal Image"
     }" class="card-img-top rounded mb-3 img-fluid" style="height: 200px;"/>
-            <div class="card-body">
-                <h5 class="card-title text-center"><strong>${
-                  animal.Animal
-                }</strong></h5>
-                <p class="text-center"><strong>Countries Found: </strong>${
-                  animal["Countries Found"]
-                }</p>
-                <p class="text-center"><strong>Habitat: </strong>${
-                  animal.Habitat
-                }</p>
-                <p class="text-center"><strong>Diet: </strong>${animal.Diet}</p>
-                <p class="text-center"><strong>Family: </strong>${
-                  animal.Family
-                }</p>
-                <p class="text-center"><strong>Conservation Status: </strong>${
-                  animal["Conservation Status"]
-                }</p>
-            </div>`;
+          <h5 class="card-title text-center"><strong>${
+            animal.Animal
+          }</strong></h5>
+        </div>
+        <div class="card-back">
+          <div class="card-content">
+            <h5 class="card-title text-center"><strong>${
+              animal.Animal
+            }</strong></h5>
+            <p class="text-center"><strong>Countries Found: </strong>${
+              animal["Countries Found"]
+            }</p>
+            <p class="text-center"><strong>Habitat: </strong>${
+              animal.Habitat
+            }</p>
+            <p class="text-center"><strong>Diet: </strong>${animal.Diet}</p>
+            <p class="text-center"><strong>Family: </strong>${animal.Family}</p>
+            <p class="text-center"><strong>Conservation Status: </strong>${
+              animal["Conservation Status"]
+            }</p>
+          </div>
+        </div>
+      </div>`;
 
+    // Add the card to the container
     container.appendChild(card);
   });
 }

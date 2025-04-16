@@ -4,10 +4,10 @@ import { fetchAnimalData } from "./apiAnimals.mjs";
 fetchAnimalData();
 
 //Import the loadSpecies function form species.mjs
-//import { loadSpecies } from "./species.mjs";
+import { loadSpecies } from "./species.mjs";
 
 //Call the function to load species data
-//loadSpecies();
+loadSpecies();
 
 // async function loadAnimalsWithImages() {
 //   try {
@@ -31,7 +31,7 @@ fetchAnimalData();
 //   }
 // }
 
-// loadAnimalsWithImages();
+// Event listener for the search button
 document.getElementById("search-button").addEventListener("click", async () => {
   const searchInput = document.getElementById("search-input").value.trim(); // Get the search input value
   if (!searchInput) {

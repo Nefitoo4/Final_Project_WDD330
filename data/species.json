@@ -1,22 +1,137 @@
 [
   {
-    "name": "Puma",
-    "scientific_name": "Puma concolor",
-    "habitat": "mountains",
-    "diet": "carnivore",
-    "conservation_status": "Least Concern",
-    "description": "The puma, also known as the cougar or mountains lion, is a large felid native to the Americas. It is known for its adaptability to various habitats, including mountains, forests, and deserts.",
-    "image": "./images/puma.jpg",
-    "alt": "Puma"
+    "name": "African Elephant",
+    "country": "Africa",
+    "habitat": "Savannas, forests",
+    "diet": "Herbivore",
+    "family": "Elephantidae",
+    "conservation_status": "Endangered",
+    "image": "./images/african-elephant.jpg"
   },
   {
-    "name": "Black Hawk",
-    "scientific_name": "Loxodonta africana",
-    "habitat": "savannah",
-    "diet": "herbivore",
+    "name": "Bengal Tiger",
+    "country": "India, Bangladesh",
+    "habitat": "Tropical forests",
+    "diet": "Carnivore",
+    "family": "Felidae",
+    "conservation_status": "Endangered",
+    "image": "./images/bengal-tiger.jpg"
+  },
+  {
+    "name": "Giant Panda",
+    "country": "China",
+    "habitat": "Bamboo forests",
+    "diet": "Herbivore",
+    "family": "Ursidae",
     "conservation_status": "Vulnerable",
-    "description": "The African elephant is the largest land animal on Earth, known for its intelligence, strong social bonds, and iconic tusks. It inhabits savannahs, forests, and deserts in Africa.",
-    "image": "./images/black-hawk.jpg",
-    "alt": "Black Hawk"
+    "image": "./images/giant_panda.png"
+  },
+  {
+    "name": "Bald Eagle",
+    "country": "USA, Canada",
+    "habitat": "Forests, wetlands",
+    "diet": "Carnivore",
+    "family": "Accipitridae",
+    "conservation_status": "Least Concern",
+    "image": "./images/bald_eagle.png"
+  },
+  {
+    "name": "Koala",
+    "country": "Australia",
+    "habitat": "Eucalyptus forests",
+    "diet": "Herbivore",
+    "family": "Phascolarctidae",
+    "conservation_status": "Vulnerable",
+    "image": "./images/koala.png"
+  },
+  {
+    "name": "Polar Bear",
+    "country": "Arctic regions",
+    "habitat": "Ice caps, tundra",
+    "diet": "Carnivore",
+    "family": "Ursidae",
+    "conservation_status": "Vulnerable",
+    "image": "./images/polar_bear.png"
+  },
+  {
+    "name": "Blue Whale",
+    "country": "Oceans worldwide",
+    "habitat": "Open ocean",
+    "diet": "Carnivore (krill)",
+    "family": "Balaenopteridae",
+    "conservation_status": "Endangered",
+    "image": "./images/blue_whale.png"
+  },
+  {
+    "name": "Komodo Dragon",
+    "country": "Indonesia",
+    "habitat": "Tropical islands",
+    "diet": "Carnivore",
+    "family": "Varanidae",
+    "conservation_status": "Vulnerable",
+    "image": "./images/komodo_dragon.png"
+  },
+  {
+    "name": "Emperor Penguin",
+    "country": "Antarctica",
+    "habitat": "Ice sheets, ocean",
+    "diet": "Carnivore (fish)",
+    "family": "Spheniscidae",
+    "conservation_status": "Near Threatened",
+    "image": "./images/emperor_penguin.png"
+  },
+  {
+    "name": "Red Fox",
+    "country": "Worldwide",
+    "habitat": "Forests, grasslands",
+    "diet": "Omnivore",
+    "family": "Canidae",
+    "conservation_status": "Least Concern",
+    "image": "./images/red_fox.png"
+  },
+  {
+    "name": "Green Sea Turtle",
+    "country": "Oceans worldwide",
+    "habitat": "Coral reefs, beaches",
+    "diet": "Herbivore",
+    "family": "Cheloniidae",
+    "conservation_status": "Endangered",
+    "image": "./images/green_sea_turtle.png"
+  },
+  {
+    "name": "Snow Leopard",
+    "country": "Central Asia",
+    "habitat": "Mountain ranges",
+    "diet": "Carnivore",
+    "family": "Felidae",
+    "conservation_status": "Vulnerable",
+    "image": "./images/snow_leopard.png"
+  },
+  {
+    "name": "African Wild Dog",
+    "country": "Africa",
+    "habitat": "Savannas, grasslands",
+    "diet": "Carnivore",
+    "family": "Canidae",
+    "conservation_status": "Endangered",
+    "image": "./images/african_wild_dog.png"
+  },
+  {
+    "name": "Orangutan",
+    "country": "Indonesia, Malaysia",
+    "habitat": "Tropical rainforests",
+    "diet": "Herbivore",
+    "family": "Hominidae",
+    "conservation_status": "Critically Endangered",
+    "image": "./images/orangutan.png"
+  },
+  {
+    "name": "Great White Shark",
+    "country": "Oceans worldwide",
+    "habitat": "Coastal waters",
+    "diet": "Carnivore",
+    "family": "Lamnidae",
+    "conservation_status": "Vulnerable",
+    "image": "./images/great_white_shark.png"
   }
 ]
