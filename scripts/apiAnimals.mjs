@@ -1,4 +1,4 @@
-//import { generateImage } from "./ImgGeneratorIA.mjs";
+import { generateImage } from "./ImgGeneratorIA.mjs";
 
 export async function fetchAnimalData(searchTerm = "") {
   // const cachedData = localStorage.getItem("animalData");
@@ -40,15 +40,15 @@ export async function fetchAnimalData(searchTerm = "") {
 
     console.log(data); //verify the data
 
-    // Filter the data results according the search input
-    // const filteredData = data.filter((animal) =>
-    //   animal.Animal.toLowerCase().includes(searchTerm.toLowerCase())
-    // );
+    //Filter the data results according the search input
+    const filteredData = data.filter((animal) =>
+      animal.Animal.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
-    // Generate images based on the animal name
-    // for (const animal of filteredData) {
-    //   animal.imageUrl = await generateImage(animal.Animal); // Generate image URL
-    // }
+    //Generate images based on the animal name
+    for (const animal of filteredData) {
+      animal.imageUrl = await generateImage(animal.Animal); // Generate image URL
+    }
 
     //Cache the data in local storage
     //localStorage.setItem("animalData", JSON.stringify(data));
