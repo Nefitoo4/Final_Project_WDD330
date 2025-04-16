@@ -24,7 +24,7 @@
     "diet": "Herbivore",
     "family": "Ursidae",
     "conservation_status": "Vulnerable",
-    "image": "./images/giant_panda.png"
+    "image": "./images/giant-panda.jpg"
   },
   {
     "name": "Bald Eagle",
@@ -123,7 +123,7 @@
     "diet": "Herbivore",
     "family": "Hominidae",
     "conservation_status": "Critically Endangered",
-    "image": "./images/orangutan.png"
+    "image": "./images/orangutan.jpg"
   },
   {
     "name": "Great White Shark",

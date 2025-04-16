@@ -7,6 +7,9 @@ export async function loadSpecies() {
     const response = await fetch("./data/species.json");
     const species = await response.json();
 
+    speciesContainer.innerHTML = "";
+    speciesContainer.classList.add("with-species"); // Agrega una clase al contenedor
+
     // Generate HTML for each species and append to the container
     species.forEach((animal) => {
       const card = document.createElement("div");
