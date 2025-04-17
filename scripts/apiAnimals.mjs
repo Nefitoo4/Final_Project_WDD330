@@ -6,11 +6,22 @@ export async function fetchAnimalData(searchTerm = "") {
     return;
   }
 
-  const cachedData = localStorage.getItem("animalData");
-  if (cachedData) {
-    console.log("Using cached data");
-    displayAnimals(JSON.parse(cachedData));
-    return;
+  // const cachedData = localStorage.getItem("animalData");
+  // if (cachedData) {
+  //   console.log("Using cached data");
+  //   displayAnimals(JSON.parse(cachedData));
+  //   return;
+  // }
+
+  // Verify if the search term is already in the search history
+  const previousSearches =
+    JSON.parse(localStorage.getItem("searchHistory")) || [];
+  if (previousSearches.includes(searchTerm.toLowerCase())) {
+    alert(`You have already searched for "${searchTerm}".`);
+  } else {
+    // Agrega el término al historial y guárdalo en Local Storage
+    previousSearches.push(searchTerm.toLowerCase());
+    localStorage.setItem("searchHistory", JSON.stringify(previousSearches));
   }
 
   const url = `https://animals7.p.rapidapi.com/api/animals?animal=${encodeURIComponent(
@@ -52,7 +63,7 @@ export async function fetchAnimalData(searchTerm = "") {
     }
 
     //Cache the data in local storage
-    localStorage.setItem("animalData", JSON.stringify(data));
+    //localStorage.setItem("animalData", JSON.stringify(data));
 
     //Convert the object to an array to manage as a list of results
     displayAnimals(data);
