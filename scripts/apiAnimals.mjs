@@ -1,14 +1,15 @@
 import { generateImage } from "./ImgGeneratorIA.mjs";
 
 export async function fetchAnimalData(searchTerm = "") {
-  // const cachedData = localStorage.getItem("animalData");
-  // if (cachedData) {
-  //   console.log("Using cached data");
-  //   displayAnimals(JSON.parse(cachedData));
-  //   return;
-  // }
   if (!searchTerm || searchTerm.trim() === "") {
     displayAnimals([]); // Display a message of "No results found"
+    return;
+  }
+
+  const cachedData = localStorage.getItem("animalData");
+  if (cachedData) {
+    console.log("Using cached data");
+    displayAnimals(JSON.parse(cachedData));
     return;
   }
 
@@ -51,7 +52,7 @@ export async function fetchAnimalData(searchTerm = "") {
     }
 
     //Cache the data in local storage
-    //localStorage.setItem("animalData", JSON.stringify(data));
+    localStorage.setItem("animalData", JSON.stringify(data));
 
     //Convert the object to an array to manage as a list of results
     displayAnimals(data);
